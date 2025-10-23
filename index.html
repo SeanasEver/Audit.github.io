@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为HTML5，固定格式 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- 确保中文正常显示，必须保留 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 适配手机和电脑屏幕 -->
+  <title>中海炼化数智化审计工具库</title> <!-- 网页标题 -->
+  
+  <!-- 引入样式工具 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- 自定义颜色配置 -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#165DFF', // 主色调（蓝色）
+            dark: '#1D2129'     // 文字颜色
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .card-effect {
+        @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
+      }
+    }
+  </style>
+  
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4eaf1 100%);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-dark p-4 md:p-8">
+  <div class="max-w-4xl mx-auto">
+    <!-- 标题区域 -->
+    <div class="text-center mb-12">
+      <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-primary">中海炼化数智化审计工具库</h1> <!-- 主标题 -->
+      <p class="mt-4 text-gray-600 text-lg">更高效、更智能</p> <!-- 网页介绍 -->
+    </div>
+    
+    <!-- 功能按钮区域 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- 制度库按钮 -->
+      <a 
+        href="https://agents.ai.cnooc:30009/agent/agents-share-web/#/assistant/share/337de894a75a4b3689f65b561233d558/FKgy" 
+        target="_blank"
+        class="card-effect p-6 flex flex-col items-center justify-center text-center group"
+      >
+        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+          <i class="fa fa-file-text-o text-primary text-2xl"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">制度库</h2>
+        <p class="text-gray-500 text-sm">公司制度要求查询与问答</p>
+        <span class="mt-4 text-primary text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+          访问 <i class="fa fa-arrow-right ml-1"></i>
+        </span>
+      </a>
+      
+      <!-- 问题库按钮 -->
+      <a 
+        href="https://agents.ai.cnooc:30009/agent/agents-share-web/#/assistant/share/4ef84635b57b436d912f48d61fe712a3/H5b8" 
+        target="_blank"
+        class="card-effect p-6 flex flex-col items-center justify-center text-center group"
+      >
+        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+          <i class="fa fa-search text-primary text-2xl"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">问题库</h2>
+        <p class="text-gray-500 text-sm">以往审计发现问题查询与问答</p>
+        <span class="mt-4 text-primary text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+          访问 <i class="fa fa-arrow-right ml-1"></i>
+        </span>
+      </a>
+      
+      <!-- 报告库按钮 -->
+      <a 
+        href="https://agents.ai.cnooc:30009/agent/agents-share-web/#/assistant/share/985505afad544e8aa55cf0b424d45e2e/XRkJ" 
+        target="_blank"
+        class="card-effect p-6 flex flex-col items-center justify-center text-center group"
+      >
+        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+          <i class="fa fa-clipboard text-primary text-2xl"></i>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">报告库</h2>
+        <p class="text-gray-500 text-sm">以往审计报告查询与问答</p>
+        <span class="mt-4 text-primary text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+          访问 <i class="fa fa-arrow-right ml-1"></i>
+        </span>
+      </a>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer class="mt-16 text-center text-gray-500 text-sm">
+      <p>© 2023 中海炼化数智化审计工具库</p> <!-- 落款 -->
+    </footer>
+  </div>
+
+  <script>
+    // 点击卡片时的缩放效果
+    document.querySelectorAll('a').forEach(card => {
+      card.addEventListener('click', function() {
+        this.classList.add('scale-95');
+        setTimeout(() => this.classList.remove('scale-95'), 200);
+      });
+    });
+  </script>
+</body>
+</html>
